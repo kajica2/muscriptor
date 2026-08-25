@@ -1,0 +1,30 @@
+:root {
+  --bg: #0b0b10;
+  --fg: #f5f5fa;
+  --accent: #8b5cf6;
+  --accent-2: #6366f1;
+  --card: #15151c;
+  --border: #2a2a35;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 48px 24px; }
+.hero { text-align: center; margin-bottom: 40px; }
+.hero h1 { font-size: 44px; margin: 0 0 12px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { color: #a0a0b0; margin: 0; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; margin-bottom: 20px; }
+
+.btn { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: white; border: 0; padding: 12px 24px; border-radius: 10px; font-weight: 600; cursor: pointer; font-size: 15px; }
+.btn:hover { opacity: 0.9; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.drop { border: 2px dashed var(--border); border-radius: 14px; padding: 40px; text-align: center; transition: border 0.2s; }
+.drop.active { border-color: var(--accent); background: rgba(139, 92, 246, 0.05); }
+
+.progress { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-top: 16px; }
+.progress > div { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition: width 0.3s; }
+
+.muted { color: #707080; font-size: 13px; }

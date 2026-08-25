@@ -1,0 +1,41 @@
+# Node
+node_modules/
+.next/
+.turbo/
+dist/
+build/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Models / cache (large)
+inference/cache/
+inference/models/
+web/public/uploads/
+
+# Misc
+verify-*.mjs
+verify-watermark.png
+verify-screenshots/

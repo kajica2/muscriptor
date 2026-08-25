@@ -1,0 +1,18 @@
+# Composite action — Node 20 + pnpm cache
+# Use: uses: ./.github/actions/setup-node  with optional node-version
+name: Setup Node
+description: Install Node and pnpm with caching
+inputs:
+  node-version:
+    description: Node.js version
+    required: false
+    default: '20'
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node-version }}
+    - shell: bash
+      run: npm install -g pnpm@9

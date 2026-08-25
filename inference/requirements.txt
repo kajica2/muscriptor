@@ -1,0 +1,11 @@
+gradio>=5.12.0
+spaces>=0.30.0
+torch>=2.4.0
+torchaudio>=2.4.0
+soundfile>=0.12.1
+transformers>=4.45.0
+huggingface_hub>=0.25.0
+midiutil>=1.2.1
+numpy>=1.26.0
+pydantic>=2.8.0
+python-multipart>=0.0.9
